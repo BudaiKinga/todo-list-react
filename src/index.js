@@ -8,14 +8,19 @@ import "./functionBased/App.css"
 
 // routing
 import { BrowserRouter } from "react-router-dom"
+import { HashRouter as Router } from "react-router-dom"
+
 
 
 
 ReactDOM.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <TodoContainer />
-    </BrowserRouter>
-  </React.StrictMode>,
+  // <React.StrictMode>
+  //   <BrowserRouter>
+  //     <TodoContainer />
+  //   </BrowserRouter>
+  // </React.StrictMode>,
+  <Router>
+    <TodoContainer />
+  </Router>,
   document.getElementById("root")
 )

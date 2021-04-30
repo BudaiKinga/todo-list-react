@@ -68,3 +68,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## Deploying to github.io according to https://ibaslogic.com/deploying-react-app-to-github-pages/
+#### command to create gh pages branch:
+###### npm install gh-pages
+## In package.json define the homepage, add "predeploy" and "deploy" scripts and finally run the command "npm run deploy"
