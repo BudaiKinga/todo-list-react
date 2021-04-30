@@ -7,11 +7,7 @@ import TodoContainer from "./functionBased/components/TodoContainer"
 import "./functionBased/App.css"
 
 // routing
-import { BrowserRouter } from "react-router-dom"
-import { HashRouter as Router } from "react-router-dom"
-
-
-
+import { BrowserRouter as Router } from "react-router-dom"
 
 ReactDOM.render(
   // <React.StrictMode>
@@ -19,7 +15,9 @@ ReactDOM.render(
   //     <TodoContainer />
   //   </BrowserRouter>
   // </React.StrictMode>,
-  <Router>
+  
+  // !!!The value assigned to the basename is the subdirectory name (which is the repository name)
+  <Router basename={process.env.PUBLIC_URL}>
     <TodoContainer />
   </Router>,
   document.getElementById("root")
